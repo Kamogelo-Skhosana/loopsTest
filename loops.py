@@ -36,10 +36,11 @@ def sum_digits(number):
 
 def count_vowels(string):
     # TODO: Return the count of vowels in the string (case-insensitive)
-    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    # vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    v = r'[aeiouAEIOU\s]'
     count = 0
-    for i in vowels:
-        if i in string:
+    for i in string:
+        if i in v:
             count += 1
     return count
 
